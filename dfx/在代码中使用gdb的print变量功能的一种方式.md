@@ -1,4 +1,4 @@
-# 在代码中使用gdb的print变量功能的一种方式，
+# 在代码中使用gdb的print变量功能的一种方式
 
 **代码如下：**
 
@@ -43,8 +43,6 @@
 gcc -g -O0 $FN.c -o $FN
 ```
 
-
-
 基本上最终显示了我想要的内容：
 
 ```bash
@@ -53,6 +51,15 @@ gcc -g -O0 $FN.c -o $FN
  0x00740422 in __kernel_vsyscall ()
  $1 = {age = 8, height = 0}
  Hello World - age: 8
+```
+
+<https://cpp.hotexamples.com/examples/-/-/PROXY_TRACE/cpp-proxy_trace-function-examples.html>
+<https://www.cnblogs.com/feihongwuhen/archive/2010/05/17/7170469.html>
+<https://gist.github.com/quark-zju/a20ae638601d2fac476e>
+<http://www.verysource.com/code/24731178_1/lua-tests-wrapper.sh.in.html>
+
+```none
+# PROXY_TRACE="gdb --batch --command=/Users/jan/projects/in-bzr/mysql-lb/backtrace.gdb --args " 
 ```
 
 原文链接：[vLinux C: Easy & 'pretty' dump/printout of structs (like in gdb) - from source code?](https://www.faqcode4u.com/faq/73091/linux-c-easy-pretty-dump-printout-of-structs-like-in-gdb-from-source-co)
@@ -333,4 +340,3 @@ bt
 echo ---\\n
 EOF }
 ```
-
